@@ -23,7 +23,7 @@ if (_useStartTime == 1) then
 	skipTime ((_startTime - dayTime + 24) % 24); // Skip forward to the starttime.	
 };
 
-diag_log format["GRG_TimeManagement %1 Build %2 Dated %3 Loaded",_ver,_build,_date];
+diag_log format["[TimeManagement] Loaded Version %1 | Build %2 | Dated %3",_ver,_build,_date];
 private _timeLoop = {
 	uiSleep 60;
 	[] call TM_fnc_time;
