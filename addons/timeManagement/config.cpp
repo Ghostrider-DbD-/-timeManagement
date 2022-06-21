@@ -30,6 +30,7 @@ class CfgFunctions {
 			class init {
 				postInit = 1;
 			};
+			class time {};
 		};
 	};
 };
