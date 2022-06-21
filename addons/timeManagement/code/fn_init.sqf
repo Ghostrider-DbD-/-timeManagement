@@ -25,7 +25,7 @@ if (_useStartTime == 1) then
 
 diag_log format["[TimeManagement] Loaded Version %1 | Build %2 | Dated %3",_ver,_build,_date];
 private _timeLoop = {
-	uiSleep 60;
+	uiSleep 300;
 	[] call TM_fnc_time;
 };
 [] spawn _timeLoop;
