@@ -18,7 +18,7 @@ class CfgPatches {
 		requiredAddons[] = {};
 	};
 };
-class CfgTimeManagement {
+class CfgTimeBuild {
 	version = "1.00";
 	build = "1";
 	buildDate = "06-20-2022";
@@ -34,10 +34,10 @@ class CfgFunctions {
 	};
 };
 
-class CfgTime {
+class CfgTimeManagement {
 	useStartTime = 0;   // When set to 1, the server will try to skip to startTime.
 	startTime = 8;  	// The server will be forced to skip from the current daytime to this time upon startup.
 	daytimeAccel = 6; 	// The time acceleration applied during daytime.
 	nighttimeAccel = 6; // The time acceleration applied during night.
-	eveningaccel = 6;	// The time acceleration applied during dawn / dusk.
+	twilightAccel = 6;	// The time acceleration applied during dawn / dusk.
 };
